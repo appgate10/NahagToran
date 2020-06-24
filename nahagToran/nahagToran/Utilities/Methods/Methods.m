@@ -166,18 +166,15 @@
 +(NSString *)GetString: (NSString *)plistName
 {
     
-    NSString *plistDoc = @"Hebrew";
-    //2do - return it
-    //  plistDoc = ([self isHebrew:plistDoc] == YES)?@"Hebrew":@"English";
-    //    NSString *lang = [APP_DELEGATE.shared_userDefaults objectForKey:@"language"];
-    //    if ([lang isEqualToString:@"100"]) {
-    //        plistDoc = @"English";
-    //    }
-    NSString *path = [[NSBundle mainBundle] pathForResource:plistDoc ofType:@"plist"];
-    NSDictionary *dic = [[NSDictionary alloc]initWithContentsOfFile:path];
-    NSString *textOfAlert = [dic objectForKey:plistName];
-    
-    return textOfAlert;
+      NSString *plistDoc = @"Hebrew";
+   //2do - return it
+   plistDoc = ([self isHebrew:plistDoc] == YES)?@"Hebrew":@"English";
+
+   NSString *path = [[NSBundle mainBundle] pathForResource:plistDoc ofType:@"plist"];
+   NSDictionary *dic = [[NSDictionary alloc]initWithContentsOfFile:path];
+   NSString *textOfAlert = [dic objectForKey:plistName];
+   
+   return textOfAlert;
 }
 +(NSString *)GetStringSupportLanguage: (NSString *)plistName
 {
@@ -214,18 +211,11 @@
 }
 +(BOOL)isHebrew: (NSString *)stringToVerify
 {
-    //    NSString *language;
-    //    if([APP_DELEGATE.language isEqualToString: @"0"])
-    //        return true;
-    //    return false;
-    
-    NSString *language = [[NSLocale preferredLanguages] objectAtIndex:0];
-    if ([language rangeOfString:@"he"].location == NSNotFound) {
-        return NO;
-    }
-    return YES;
-    
-    //[APP_DELEGATE.shared_userDefaults setObject:@"hebrew" forKey:@"currentLanguage"];
+       NSString *language;
+        if([APP_DELEGATE.language isEqualToString: @"0"])
+            return true;
+        return false;
+        //[APP_DELEGATE.shared_userDefaults setObject:@"hebrew" forKey:@"currentLanguage"];
     //    if ([APP_DELEGATE.shared_userDefaults objectForKey:@"currentLanguage"] != nil) {
     //        language = [APP_DELEGATE.shared_userDefaults objectForKey:@"currentLanguage"];
     //
@@ -237,13 +227,12 @@
     //    }
     //    else
     //    {
-    // just for difference between en and he
-    language = [[NSLocale preferredLanguages] objectAtIndex:0];
-    if ([language rangeOfString:@"he"].location == NSNotFound) {
-        return false;
-    }
-    return true;
-    //    }
+            // just for difference between en and he
+            language = [[NSLocale preferredLanguages] objectAtIndex:0];
+            if ([language rangeOfString:@"he"].location == NSNotFound) {
+                return false;
+            }
+            return true;
 }
 + (CLLocationCoordinate2D) getLocationFromAddress:(NSString *)address
 {

@@ -19,10 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
+
     HIDE_NAVIGATION_BAR
     SET_ACTIVITY_INDICATOR
-
+     self.btnOrderDriver.titleLabel.text = [Methods GetString:@"order_drive"];
     if ([CLLocationManager locationServicesEnabled]) {
         self.locationManager = [[CLLocationManager alloc] init];
         self.locationManager.delegate = self;

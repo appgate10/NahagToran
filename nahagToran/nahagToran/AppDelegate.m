@@ -76,7 +76,13 @@
         NSString *lang = [language containsString:@"en"]?@"100":@"0";
         [APP_DELEGATE.shared_userDefaults setObject:lang forKey:@"language"];
     }
-        
+        _language = @"0";
+        if([APP_DELEGATE.shared_userDefaults objectForKey:@"language"])
+            _language =[APP_DELEGATE.shared_userDefaults objectForKey:@"language"];
+        else{
+            NSMutableArray* arrayLanguages = [[self.shared_userDefaults objectForKey:@"AppleLanguages"] mutableCopy];
+            
+        }
     if (@available(iOS 13.0, *)) {
         
     }

@@ -45,7 +45,7 @@
 
 
 -(void)setPage {
-    
+    self.btnOrderDriver.titleLabel.text = [Methods GetString:@"order_drive"];
     _activityIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     _activityIndicator.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
     [_activityIndicator setCenter:CGPointMake(self.frame.size.width/2, self.frame.size.height/2)];

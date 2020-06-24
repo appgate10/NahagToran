@@ -215,15 +215,15 @@
     [_btnLng setTitle:[arrLanguages objectAtIndex:indexPath.row] forState:UIControlStateNormal];
     
     
-//    APP_DELEGATE.language =[NSString stringWithFormat:@"%d",selectedLanguage];
-//    [ServiceConnector getUserDetailsAndReturn:^(BOOL ok) {
-//        if(ok){
-//            LaunchVC *view = [[LaunchVC alloc]init];
-//            APP_DELEGATE.rootNav = [[UINavigationController alloc]initWithRootViewController:view];
-//            APP_DELEGATE.window.rootViewController = view;//self.rootNav;
-//            [APP_DELEGATE.window makeKeyAndVisible];
-//        }
-//    }];
+    APP_DELEGATE.language =[NSString stringWithFormat:@"%d",selectedLanguage];
+    [ServiceConnector getUserDetailsAndReturn:^(BOOL ok) {
+        if(ok){
+            LaunchVC *view = [[LaunchVC alloc]init];
+            APP_DELEGATE.rootNav = [[UINavigationController alloc]initWithRootViewController:view];
+            APP_DELEGATE.window.rootViewController = view;//self.rootNav;
+            [APP_DELEGATE.window makeKeyAndVisible];
+        }
+    }];
 }
 
 

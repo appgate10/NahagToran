@@ -15,7 +15,7 @@
 #import "User.h"
 #import "Driver.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate,CLLocationManagerDelegate,UNUserNotificationCenterDelegate>
-
+@property (retain, nonatomic) NSString *language;
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) NSUserDefaults *shared_userDefaults;
 @property CGSize screenSize;
