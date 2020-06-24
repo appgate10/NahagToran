@@ -1,0 +1,215 @@
+//
+//  PrefixHeader.pch
+//  Intv
+//
+//  Created by AppGate  Inc on 1/25/15.
+//  Copyright (c) 2015 AppGate  Inc. All rights reserved.
+//
+
+#ifndef Intv_PrefixHeader_pch
+#define Intv_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <UIKit/UIKit.h>
+#import "NSString (MD5).h"
+#import "PhoneDetails.h"
+#import "OpenUDID.h"
+
+#import "AppDelegate.h"
+#import "SceneDelegate.h"
+#import "ServiceConnector.h"
+#import "ServiceConnectorHelper.h"
+#import "AFHTTPRequestOperationManager.h"
+#import "Validator.h"
+#import "Methods.h"
+#import "NSString+NSStringExtentionMC.h"
+#import "FramworkCrushes.h"
+#import "UIImageView+WebCache.h"
+#import "SVPullToRefresh.h"
+#import "UIScrollView+SVInfiniteScrolling.h"
+#import "UITableView+FDTemplateLayoutCell.h"
+#import "JASidePanelController.h"
+#import "NSDictionary+NullObjects.h"
+//#import <GooglePlaces/GooglePlaces.h>
+#import "NSData+Base64.h"
+#import <CoreMotion/CoreMotion.h>
+#import <CoreLocation/CoreLocation.h>
+#import "ImagePickerMC.h"
+#import "ColorUtils.h"
+#import <QuartzCore/QuartzCore.h>
+#import <MessageUI/MessageUI.h>
+#import <Social/Social.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import <AVFoundation/AVFoundation.h>
+#import "NTMonthYearPicker.h"
+#import <Photos/Photos.h>
+#import "UploadAVAssetExportSession.h"
+#import "BHBView.h"
+#import "BABCropperView.h"
+#import "FacebookConnect.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKShareKit/FBSDKShareKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <GoogleMaps/GoogleMaps.h>
+#import <GooglePlaces/GooglePlaces.h>
+
+#import <AVFoundation/AVFoundation.h>
+#import <QuartzCore/QuartzCore.h>
+#import "JASidePanelController.h"
+#import "CGConnector.h"
+#import "XMLDictionary.h"
+#import "UIButton+DynamicFontSize.h"
+#import "UILabel+DynamicFontSize.h"
+#import "UITextField+DynamicFontSize.h"
+
+
+#import "LaunchVC.h"
+#import "SignInVC.h"
+#import "SignUpVC.h"
+#import "EditProfileVC.h"
+//#import "SignUpVC2.h"
+#import "UserTypeVC.h"
+#import "LocationVC.h"
+#import "SmsVC.h"
+#import "DriverMainPage.h"
+#import "PassengerHomePage.h"
+#import "MenuVC.h"
+#import "TravelCaughtView.h"
+#import "DriverBookingView.h"
+#import "SearchTravelPopUp.h"
+#import "DriverRatingView.h"
+#import "OrderApprovedView.h"
+#import "TokenPaymentView.h"
+#import "TosVC.h"
+#import "User.h"
+#import "Driver.h"
+#import "ForgotPasswordVC.h"
+//#import "CodeVerificationVC.h"
+//#import "EnterPasswordVC.h"
+//#import "HomePageVC.h"
+//#import "BottomBar.h"
+//#import "ReportsVC.h"
+//#import "ReportCell.h"
+//#import "NotificationsVC.h"
+//#import "NotificationCell.h"
+//#import "SettingsVC.h"
+//#import "GraphVC.h"
+//#import "Menu.h"
+//#import "LanguagesCell.h"
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+
+#ifdef __OBJC__
+
+#define TMP_DIR [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"DMD_tmp"]
+
+#endif
+
+#define IPAD_RATIO 1.52272
+#define IPHONE45_RATIO 0.854
+#define IPHONE6P_RATIO 1.104
+#define APP_DELEGATE1 (@available(iOS 13.0, *))?((SceneDelegate *)[UIApplication sharedApplication].connectedScenes.allObjects.firstObject.delegate):((AppDelegate*)[UIApplication sharedApplication].delegate)
+#define APP_DELEGATE ((AppDelegate*)[UIApplication sharedApplication].delegate)
+#define SCENE_DELEGATE ((SceneDelegate *)[UIApplication sharedApplication].connectedScenes.allObjects.firstObject.delegate)
+#define NAVIGATION [self.navigationController pushViewController:view animated:YES];
+#define NAVIGATION_NO_ANIMATION [self.navigationController pushViewController:view animated:NO];
+
+#define USER @"User/"
+#define DRIVER @"Driver/"
+
+#define API_URL @"http://nahagToran.co.il/Api/"
+#define GMAIL_API_URL @"https://www.googleapis.com/gmail/v1/users/me/messages"
+
+#define SECRET_KEY @"NahagToran9MAzayjkimroWk2jmPwoeWf07n4DWW"
+#define API_KEY @"AIzaSyCXrwyMf0qOSgPzupfPdyWd7AyaQzI48ZY"
+#define RESPONSE @"responseMessage"
+#define kBoundary   @"---------------------------14737809831466499882746641449"
+#define POP_UP [self.navigationController popViewControllerAnimated:YES];
+#define POP_UP_NO_ANIMATION [self.navigationController popViewControllerAnimated:NO];
+#define URL_APP_STORE @"http://sundoapp.co/Share"
+#define ADD_CHAT_BUBBLE  chat = [[ChatBubbleView alloc] init:^(BOOL doneBlock) {ConversationsVC *view =[[ConversationsVC alloc] init];NAVIGATION}];[self.view addSubview:chat];[self setChatLabel:chat];
+#define SET_MESSAGE_LABEL APP_DELEGATE.lblMessageCurrentVC = self.lblMessage;
+//#define CUSTOM_ALERT UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:mess preferredStyle:UIAlertControllerStyleAlert];UIFont *font = [UIFont systemFontOfSize:17.0];NSDictionary *attrsDictionary = [NSDictionary dictionaryWithObject:font forKey:NSFontAttributeName];NSAttributedString *attrString = [[NSAttributedString alloc] initWithString:mess attributes:attrsDictionary];[alert setValue:attrString forKey:@"attributedMessage"];[alert addAction:[UIAlertAction actionWithTitle:@"אישור" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action){_currentBlockk(1);}]];[controller presentViewController:alert animated:true completion:nil];
+
+#define CUSTOM_ALERT_2_BUTTONS(title,mess,controller,yesText,noText) UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:mess preferredStyle:UIAlertControllerStyleAlert];UIFont *font = [UIFont systemFontOfSize:16.0];NSDictionary *attrsDictionary = [NSDictionary dictionaryWithObject:font forKey:NSFontAttributeName];NSAttributedString *attrString = [[NSAttributedString alloc] initWithString:mess attributes:attrsDictionary];[alert setValue:attrString forKey:@"attributedMessage"];[alert addAction:[UIAlertAction actionWithTitle:yesText style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action){_currentBlockk(1);}]];[alert addAction:[UIAlertAction actionWithTitle:noText style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {[controller dismissViewControllerAnimated:true completion:nil];_currentBlockk(0);}]];[controller presentViewController:alert animated:true completion:nil];
+
+
+#define SHOW_ALERT_NEW(object,viewCon) UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"" message:object preferredStyle:UIAlertControllerStyleAlert]; UIAlertAction* cuncelButton = [UIAlertAction actionWithTitle:[Methods GetString:@"Ok"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action){_currentBlockk(1);}]; [alert addAction:cuncelButton]; [viewCon presentViewController:alert animated:YES completion:nil];
+
+#define SHOW_ALERT_NEW1(title,object,viewCon) UIAlertController * alert = [UIAlertController alertControllerWithTitle:title message:object preferredStyle:UIAlertControllerStyleAlert]; UIAlertAction* cuncelButton = [UIAlertAction actionWithTitle:[Methods GetString:@"Ok"] style:UIAlertActionStyleCancel handler:nil]; [alert addAction:cuncelButton]; [viewCon presentViewController:alert animated:YES completion:nil];
+
+
+#define SHOW_ALERT(object) UIAlertView*alertt=[[UIAlertView alloc]initWithTitle:@"" message:object delegate:self cancelButtonTitle:[Methods GetString:@"ok"] otherButtonTitles: nil];[alertt show];
+#define SHOW_ALERT_2(object) UIAlertView*alertt=[[UIAlertView alloc]initWithTitle:@"" message:object delegate:self cancelButtonTitle:@"ביטול" otherButtonTitles:@"אישור", nil];[alertt show];
+#define INIT_OLD - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];if (self){self = [super initWithNibName:[NSString stringWithFormat:@"%@_%@" ,NSStringFromClass([self class]),APP_DELEGATE.deviceName] bundle:nil] ;}return self;}
+
+#define INIT - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];if (self){self = [super initWithNibName:NSStringFromClass([self class]) bundle:nil] ;}return self;}
+
+#define DID_RECEIVE - (void)didReceiveMemoryWarning {[super didReceiveMemoryWarning];}
+//#define INIT_CELL +(UINib *)nib{return [UINib nibWithNibName:[NSString stringWithFormat:@"%@_%@",NSStringFromClass([self class]),APP_DELEGATE.deviceName] bundle:Nil];};
+#define INIT_CELL +(UINib *)nib{return [UINib nibWithNibName:[NSString stringWithFormat:@"%@_%@",NSStringFromClass([self class]),[APP_DELEGATE.deviceName isEqualToString:@"iPhoneX"]?@"iPhone6":APP_DELEGATE.deviceName] bundle:Nil];};
+#define SETUNREEAD -(void)setUnReadNotifications{int unread = [[APP_DELEGATE.shared_userDefaults objectForKey:@"unRead_notifications_count"] intValue];_lblNotificationsNum.hidden = YES;if(![[APP_DELEGATE.shared_userDefaults objectForKey:@"new_activities_alerts"] boolValue]){_imgNotification.image = [UIImage imageNamed:[NSString stringWithFormat: @"Notification_Icon_Off%@",APP_DELEGATE.end4]];}else if(unread>0){_lblNotificationsNum.hidden = NO;_lblNotificationsNum.text = [NSString stringWithFormat:@"%d",unread];_imgNotification.image = [UIImage imageNamed:[NSString stringWithFormat: @"Notification_Icon_Num%@",APP_DELEGATE.end4]];}else{_imgNotification.image = [UIImage imageNamed:[NSString stringWithFormat: @"Notification_Icon%@",APP_DELEGATE.end4]];}}
+
+#define PULL_TO_REFRESH self.refreshControl = [[UIRefreshControl alloc] init];[self.refreshControl addTarget:self action:@selector(handleRefresh:) forControlEvents:UIControlEventValueChanged];[_tbl addSubview:self.refreshControl];
+
+#define HANDEL_REFRESH - (void)handleRefresh:(id)sender{[self.refreshControl beginRefreshing];APP_DELEGATE.refreshControl=_refreshControl;[self setTable];}
+//#define SHARE_IMAGE @"http://mabrukey.co.il/images/ShareAgent.jpg"
+#define HIDE_NAVIGATION_BAR [[self navigationController] setNavigationBarHidden:YES animated:NO];
+#define TAP_VIEW_FUNCTION(object,funcName)  UITapGestureRecognizer *tap =[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(funcName)];tap.delegate = self;[object addGestureRecognizer:tap];
+#define SET_ACTIVITY_INDICATOR _activityIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];_activityIndicator.frame=CGRectMake(0, 0, [Methods sizeForDevice:375], [Methods sizeForDevice:667]);[_activityIndicator setCenter:CGPointMake([Methods sizeForDevice:375]/2, [Methods sizeForDevice:667]/2)];[self.view addSubview:self.activityIndicator];[self.view bringSubviewToFront:self.activityIndicator];
+
+#define PULL_TO_REFRESH_2 self.refreshControl = [[UIRefreshControl alloc] init];[self.refreshControl addTarget:self action:@selector(handleRefresh:) forControlEvents:UIControlEventValueChanged];[_tableView addSubview:self.refreshControl];
+
+#define COLOR_PURPLE [UIColor colorWithRed:182.0/255 green:80.0/255 blue:164.0/255 alpha:1.0]
+
+//device
+#define SIGNATURE_SECURITY @"signature"
+#define RESOLUTION_W @"clientResolutionWidth"
+#define RESOLUTION_H @"clientResolutionHeight"
+#define SYSTEM @"operatingSystem"
+#define SYSTEM_TYPE @"operatingSystemType"
+#define DEVICE_TYPE_NAME @"deviceTypeName"
+#define DEVICE_ID @"DeviceID"
+#define DEVICE_TOKEN @"DeviceToken"
+#define DEVICE_TYPE @"DeviceType"
+#define UNREAD_NOTIFICATIONS @"unRead_notifications_count"
+#define USER_TOKEN @"userToken"
+#define STUDENT_ID @"studentId"
+#define STUDENT_PASSWORD @"studentPassword"
+
+#define IS_FIRST_ENTER @"isFirstEnter"
+
+//userParams
+#define ACCESS_TOKEN @"accessToken"
+#define USER_NICKNAME @"userNickName"
+
+#define USER_FULL_NAME @"userFullName"
+#define USER_PASSWORD @"userPassword"
+#define USER_EMAIL @"userEmail"
+
+#define USER_GENDER @"userGender"
+#define IMAGE_FILE @"ImageFile"
+#define VIDEO_FILE @"VideoFile"
+#define VIDEO_IMAGE_FILE @"VideoImageFile"
+#define PANORAMIC_IMAGE_FILE @"PanoramicImageFile"
+#define PANORAMIC_360_IMAGE_FILE @"Panoramic360ImageFile"
+#define USER_ID @"IDUser"
+#define USER_FB_ID @"FaceBookId"
+#define USER_BIRTHDAY @"birth_date"
+#define USER_PHONE @"userPhone"
+
+#define USER_CARD_ID @"idCard"
+#define USER_CARD_NUM @"numCard"
+#define USER_CARD_TOKEF @"tokefCard"
+#define USER_CARD_MAIL @"mailCard"
+#define USER_CARD_NAME @"nameCard"
+#define USER_CARD_TYPE @"typeCard"
+
+
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+
+#endif

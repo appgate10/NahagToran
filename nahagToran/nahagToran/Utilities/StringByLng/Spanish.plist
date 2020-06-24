@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>app_name</key>
+<string>NahagToran</string>
+<key>login_title</key>
+<string>Войти</string>
+<key>please_insert_phone_number</key>
+<string>Пожалуйста, введите номер телефона</string>
+<key>phone</key>
+<string>телефон</string>
+<key>password</key>
+<string>пароль</string>
+<key>password_forgot</key>
+<string>забыли пароль?</string>
+<key>press_here</key>
+<string>Нажмите здесь</string>
+<key>go</key>
+<string>Можно ехать</string>
+<key>new_user</key>
+<string>Новый пользователь?</string>
+<key>sign_up</key>
+<string>регистрация</string>
+<key>i</key>
+<string>Я</string>
+<key>nahag</key>
+<string>водитель</string>
+<key>nosea</key>
+<string>Пассажир</string>
+<key>permission_title</key>
+<string>Разрешение на использование услугопределения местоположения</string>
+<key>permission_msg</key>
+<string>Чтобы предоставить вам услугибронирования водителей\nв режимереального времени, нам нужно знатьваше местоположение</string>
+<key>ok</key>
+<string>который</string>
+<key>cancel</key>
+<string>Отклонено</string>
+<key>validation</key>
+<string>идентификация</string>
+<key>validation_msg</key>
+<string>Сообщение с четырехзначным кодом отправляется на номер телефона,\nкоторый вы ввели в систему.\nДля проверки его необходимо ввести</string>
+<key>send_again</key>
+<string>Отправить еще раз</string>
+<key>send</key>
+<string>Отправить</string>
+<key>give_msg</key>
+<string>Не получили сообщение?</string>
+<key>permission_msg_title</key>
+<string>Разрешение на получения сообщений</string>
+<key>permission_msg_msg</key>
+<string>Для того, чтобыобновлять вас важной информацией\nв режиме реального времени, нам нужно разрешение </string>
+<key>share</key>
+<string>Поделиться виджетом</string>
+<key>settings</key>
+<string>настройки</string>
+<key>my_tokens</key>
+<string>Мои виртуальные деньги</string>
+<key>choise_lang</key>
+<string>Выбрать\nязык</string>
+<key>go_out</key>
+<string>Выйти</string>
+<key>hebrew</key>
+<string>עברית</string>
+<key>english</key>
+<string>English</string>
+<key>face_book_signup</key>
+<string>Зарегистрироваться через Facebook</string>
+<key>or</key>
+<string>или</string>
+<key>manual_signup</key>
+<string>Ручная регистрация</string>
+<key>required_fields</key>
+<string>Поля, отмеченные *, обязательны для заполнения</string>
+<key>choise_profil_img</key>
+<string>Выберите изображение профиля</string>
+<key>birth_date</key>
+<string>Дата рождения</string>
+<key>id_text</key>
+<string>Номер удостоверения личности. Паспорт</string>
+<key>email_text</key>
+<string>Электронная почта</string>
+<key>password_text</key>
+<string>пароль</string>
+<key>confirm_password_text</key>
+<string>Подтверждение пароля</string>
+<key>name_text</key>
+<string>Полное имя</string>
+<key>genus_text</key>
+<string>пол</string>
+<key>male</key>
+<string>мужчина</string>
+<key>female</key>
+<string>женщина</string>
+<key>phone_text</key>
+<string>телефон</string>
+<key>title_activity_maps</key>
+<string>Map</string>
+<key>order_driver</key>
+<string>вызов водителя</string>
+<key>collecting_point</key>
+<string>Пункт сбора</string>
+<key>first_target</key>
+<string>Первая цель</string>
+<key>choise_male_female</key>
+<string>Выберите водителя мужского или\nженского полa</string>
+<key>target_number</key>
+<string>Ряд целей</string>
+<key>search_driver_range</key>
+<string>Найти водителя в диапазоне:</string>
+<key>price_text</key>
+<string>Ожидаемая цена</string>
+<key>order_drive</key>
+<string>Вызвать водителя</string>
+<key>search_driver</key>
+<string>Ищу сменного водителя</string>
+<key>took_drive_msg</key>
+<string>Похоже, что другой водитель уже выехал,\nудачи в следующий раз! </string>
+<key>ok2</key>
+<string>подтверждение</string>
+<key>fix_drive</key>
+<string>Поездка завершена</string>
+<key>rate_text</key>
+<string>Оцените это</string>
+<key>skip</key>
+<string>Пропустить</string>
+<key>token_payment</key>
+<string>Оплата Токены</string>
+<key>by_your_leave</key>
+<string>У вас есть</string>
+<key>tokens</key>
+<string>Токены</string>
+<key>token_msg</key>
+<string>Чтобы заказать водителя,\nвы должны заплатить в Token за заказ водителя.</string>
+<key>token_msg2</key>
+<string> *Оплата токена производится за использованиелуги\nи отдельно от оплаты водителю мачты.</string>
+<key>card_number</key>
+<string>Номер карты</string>
+<key>expiration</key>
+<string>срок действия</string>
+<key>cvv_text</key>
+<string>Три цифры на обратной стороне карты</string>
+<key>number_of_token_text</key>
+<string>Сколько Токены вы хотели бы купить?</string>
+<key>facebook_app_id</key>
+<string>203541934375533</string>
+<key>cancel_driver</key>
+<string>Отмена поездки</string>
+<key>toast_image_intent_null</key>
+<string>Q Выберите изображение профиля</string>
+<key>lbl_set_profile_photo</key>
+<string>Set Image</string>
+<key>lbl_take_camera_picture</key>
+<string>Take a picture</string>
+<key>lbl_choose_from_gallery</key>
+<string>Choose from gallery</string>
+<key>dialog_permission_title</key>
+<string>Grant Permissions</string>
+<key>dialog_permission_message</key>
+<string>This app needs permission to use this feature. You can grant them in app settings.</string>
+<key>go_to_settings</key>
+<string>GOTO SETTINGS</string>
+<key>validation_error_msg</key>
+<string>Q Выберите изображение профиля</string>
+<key>validation_error_msg2</key>
+<string>Q Введите дату рождения</string>
+<key>send_code_msg</key>
+<string>Сообщение было отправлено на ваш номер телефона</string>
+<key>male_driver</key>
+<string>(Мужчина)</string>
+<key>female_driver</key>
+<string> (Женщина)</string>
+<key>buy</key>
+<string>покупка</string>
+<key>destination_navigation</key>
+<string>Навигация назначения</string>
+<key>busy</key>
+<string>задвижка</string>
+<key>free</key>
+<string>бесплатно</string>
+<key>status_driver_work</key>
+<string>Рабочая</string>
+<key>status_driver_work2</key>
+<string>Не работает</string>
+<key>maledriver</key>
+<string>Водитель</string>
+<key>femaledriver</key>
+<string>Водитель</string>
+<key>not_metter</key>
+<string>Не важно</string>
+<key>NIS</key>
+<string>NIS</string>
+<key>nvitation_accepted_successfully</key>
+<string>Приглашение прошло успешно!</string>
+<key>profile_saved_successfully</key>
+<string>Детали успешно сохранены</string>
+<key>no_driver_near_the_travel</key>
+<string>Водитель не найден поблизости</string>
+<key>need_to_buy_tokens</key>
+<string>Необходимо купить токены</string>
+<key>edit_profil</key>
+<string>Редактировать профиль</string>
+<key>location_updated</key>
+<string>Обновления местоположения</string>
+<key>launch_activity</key>
+<string>Открыть приложение</string>
+<key>remove_location_updates</key>
+<string>Остановить обновления местоположения</string>
+<key>km_from_your_location</key>
+<string>Км от вашего местоположения</string>
+<key>cancel2</key>
+<string>отмена</string>
+<key>driver_took_msg</key>
+<string>Ваш заказ был принят мной</string>
+<key>driver_took_msg2</key>
+<string>Водитель едет к вам</string>
+<key>travels</key>
+<string>путешествие</string>
+<key>time_txt</key>
+<string>Время прибытия:</string>
+<key>SOS_txt</key>
+<string>SOS</string>
+<key>finish_Travel</key>
+<string>Завершить путешествие</string>
+<key>cancel_travel_by_user_msg</key>
+<string>Поездка была отменена клиентом</string>
+<key>cancel_travel_msg</key>
+<string>Поездка была отменена</string>
+<key>terms_of_uses_msg</key>
+<string>Нажав кнопку «Перейти», я одтверждаю,\nчто ознакомился с Условиями использования\nи Политикой конфиденциальности. </string>
+<key>terms_of_uses</key>
+<string>Условиями использования</string>
+<key>privacy_policy</key>
+<string>Политикой конфиденциальности</string>
+<key>msg_30_sec</key>
+<string>Водитель мачты прибыл!</string>
+<key>targets</key>
+<string>Направления</string>
+<key>no_matching_app_found_</key>
+<string>No matching app found.</string>
+<key>reset_password</key>
+<string>Сброс пароля</string>
+<key>enter_email_for_reset</key>
+<string>Для сброса пароля необходимо\nввести адрес электронной почты</string>
+<key>email_successfully_sent</key>
+<string>Письмо было успешно отправлено</string>
+<key>i_reached_destination</key>
+<string>Я достиг цели</string>
+<key>your_rating_has_been_accepted</key>
+<string>Ваша оценка была принята</string>
+<key>rusit</key>
+<string>русский</string>
+<key>home</key>
+<string>Дом</string>
+</dict>
+</plist>

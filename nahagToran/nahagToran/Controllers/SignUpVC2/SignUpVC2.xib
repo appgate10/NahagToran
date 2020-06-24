@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpVC2">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n7y-rI-M5c">
+                    <rect key="frame" x="-1" y="0.0" width="415.66666666666669" height="761.66666666666663"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWF-yp-3Nr">
+                            <rect key="frame" x="0.0" y="0.0" width="415.66666666666669" height="1277.6666666666667"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="Signup_BG_1" translatesAutoresizingMaskIntoConstraints="NO" id="S4e-bq-6h8">
+                                    <rect key="frame" x="0.0" y="0.0" width="415.66666666666669" height="344.66666666666669"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Signup_BG_2" translatesAutoresizingMaskIntoConstraints="NO" id="fB8-fB-eGo">
+                                    <rect key="frame" x="0.33333333333334281" y="126" width="414.66666666666663" height="1069.3333333333333"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Logo_1" translatesAutoresizingMaskIntoConstraints="NO" id="2z1-ZW-oZC">
+                                    <rect key="frame" x="139.66666666666663" y="80" width="136.33333333333337" height="47.333333333333343"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="S4e-bq-6h8" firstAttribute="width" secondItem="eWF-yp-3Nr" secondAttribute="width" id="5ch-OY-ivt"/>
+                                <constraint firstItem="2z1-ZW-oZC" firstAttribute="top" secondItem="eWF-yp-3Nr" secondAttribute="top" constant="80" id="FBM-d2-aZI"/>
+                                <constraint firstItem="fB8-fB-eGo" firstAttribute="top" secondItem="eWF-yp-3Nr" secondAttribute="top" constant="126" id="OuD-rQ-aRH"/>
+                                <constraint firstItem="fB8-fB-eGo" firstAttribute="leading" secondItem="eWF-yp-3Nr" secondAttribute="leading" constant="0.5" id="TFN-BB-hUu"/>
+                                <constraint firstItem="S4e-bq-6h8" firstAttribute="centerX" secondItem="eWF-yp-3Nr" secondAttribute="centerX" id="XG4-oY-vky"/>
+                                <constraint firstItem="fB8-fB-eGo" firstAttribute="height" secondItem="eWF-yp-3Nr" secondAttribute="height" multiplier="0.837" id="crW-9Q-VeT"/>
+                                <constraint firstAttribute="trailing" secondItem="fB8-fB-eGo" secondAttribute="trailing" constant="0.5" id="dgb-A6-2js"/>
+                                <constraint firstItem="2z1-ZW-oZC" firstAttribute="centerX" secondItem="eWF-yp-3Nr" secondAttribute="centerX" id="e1z-cs-8YB"/>
+                                <constraint firstItem="S4e-bq-6h8" firstAttribute="top" secondItem="eWF-yp-3Nr" secondAttribute="top" id="rju-8c-LfI"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.98039215690000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="S4e-bq-6h8" firstAttribute="height" secondItem="n7y-rI-M5c" secondAttribute="height" multiplier="0.4527" id="1VV-UV-gdi"/>
+                        <constraint firstAttribute="bottom" secondItem="eWF-yp-3Nr" secondAttribute="bottom" id="DJT-aF-2dl"/>
+                        <constraint firstItem="eWF-yp-3Nr" firstAttribute="top" secondItem="n7y-rI-M5c" secondAttribute="top" id="M2l-IU-zd9"/>
+                        <constraint firstItem="eWF-yp-3Nr" firstAttribute="leading" secondItem="n7y-rI-M5c" secondAttribute="leading" id="Mxf-Sb-oTZ"/>
+                        <constraint firstAttribute="trailing" secondItem="eWF-yp-3Nr" secondAttribute="trailing" id="RFm-9b-f7h"/>
+                        <constraint firstItem="eWF-yp-3Nr" firstAttribute="width" secondItem="n7y-rI-M5c" secondAttribute="width" id="fpa-Bv-NpX"/>
+                        <constraint firstItem="2z1-ZW-oZC" firstAttribute="height" secondItem="n7y-rI-M5c" secondAttribute="height" multiplier="0.062" id="ojQ-UC-Qzp"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="leading" secondItem="n7y-rI-M5c" secondAttribute="leading" constant="1" id="46x-qd-SQ5"/>
+                <constraint firstItem="n7y-rI-M5c" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" constant="25.5" id="GqI-Uu-Z2h"/>
+                <constraint firstItem="n7y-rI-M5c" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" constant="0.5" id="VKf-gS-wlz"/>
+                <constraint firstItem="n7y-rI-M5c" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="cFQ-XM-9OV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="138.40000000000001" y="116.49175412293854"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Logo_1" width="136.33332824707031" height="46"/>
+        <image name="Signup_BG_1" width="414" height="333.33334350585938"/>
+        <image name="Signup_BG_2" width="414" height="1069.3333740234375"/>
+    </resources>
+</document>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSansHebrew-Bold.ttf">
+            <string>OpenSansHebrew-Bold</string>
+        </array>
+        <array key="OpenSansHebrew-Regular.ttf">
+            <string>OpenSansHebrew-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInVC">
+            <connections>
+                <outlet property="btnNewUser" destination="GBH-Oh-gQE" id="7Wn-yq-B23"/>
+                <outlet property="btnPressHere" destination="HHK-7w-dVl" id="c9B-We-58v"/>
+                <outlet property="btnShowPass" destination="Lk3-nP-ATb" id="5X5-ZA-GwC"/>
+                <outlet property="btnSignIn" destination="K51-da-dxs" id="Ybp-SK-IE1"/>
+                <outlet property="imgBG" destination="eSl-FG-uc2" id="XnL-4t-HBE"/>
+                <outlet property="lblErrorPhone" destination="wc7-D7-kEP" id="YBg-BQ-NwG"/>
+                <outlet property="lblErrorpassword" destination="YPT-Rd-WkO" id="zVw-P6-Cbr"/>
+                <outlet property="lblForget" destination="Qoq-M9-4u1" id="7EU-aZ-bJD"/>
+                <outlet property="lblNewUser" destination="aWN-jX-vvC" id="Lbg-Fo-DPW"/>
+                <outlet property="lblTittle" destination="ZaX-2J-art" id="vTl-Nh-iar"/>
+                <outlet property="txtPassword" destination="0Rl-Nr-k8B" id="qNS-FG-m1M"/>
+                <outlet property="txtPhone" destination="xOB-E3-Mtq" id="1zb-Ex-3qp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="BG_2" translatesAutoresizingMaskIntoConstraints="NO" id="eSl-FG-uc2">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="Activation_Code_Popup_BG" translatesAutoresizingMaskIntoConstraints="NO" id="lRm-xh-yXh">
+                    <rect key="frame" x="26" y="184" width="323.5" height="359"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Signup_Box" translatesAutoresizingMaskIntoConstraints="NO" id="w6p-1t-2y3">
+                    <rect key="frame" x="68.5" y="337.5" width="238" height="42"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="התחברות" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaX-2J-art">
+                    <rect key="frame" x="26" y="304" width="323.5" height="23.5"/>
+                    <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="17"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adjustFontSize" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K51-da-dxs">
+                    <rect key="frame" x="58" y="500" width="259.5" height="70"/>
+                    <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="17"/>
+                    <state key="normal" title="Button" backgroundImage="Signin_OK_Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adjustFontSize" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnSignInClicked:" destination="-1" eventType="touchUpInside" id="eqd-Rm-oNC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBH-Oh-gQE">
+                    <rect key="frame" x="58" y="592" width="259.5" height="70.5"/>
+                    <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="17"/>
+                    <state key="normal" title="Button" backgroundImage="Signin_Signup_Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adjustFontSize" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnSignUpClicked:" destination="-1" eventType="touchUpInside" id="YjC-17-8yP"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="משתמש חדש?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWN-jX-vvC">
+                    <rect key="frame" x="141" y="570" width="93" height="22"/>
+                    <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="16"/>
+                    <color key="textColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adjustFontSize" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHK-7w-dVl">
+                    <rect key="frame" x="68.5" y="450.5" width="40" height="30"/>
+                    <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="13"/>
+                    <state key="normal" title="לחץ כאן">
+                        <color key="titleColor" red="0.27450980392156865" green="0.64313725490196083" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adjustFontSize" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnForgetClicked:" destination="-1" eventType="touchUpInside" id="5vB-Se-aph"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="משתמש חדש?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qoq-M9-4u1">
+                    <rect key="frame" x="118.5" y="456.5" width="75.5" height="18"/>
+                    <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="13"/>
+                    <color key="textColor" red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adjustFontSize" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="משתמש חדש?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wc7-D7-kEP">
+                    <rect key="frame" x="201" y="379.5" width="70" height="16.5"/>
+                    <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="12"/>
+                    <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adjustFontSize" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="משתמש חדש?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPT-Rd-WkO">
+                    <rect key="frame" x="201" y="441.5" width="70" height="16.5"/>
+                    <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="12"/>
+                    <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adjustFontSize" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xOB-E3-Mtq">
+                    <rect key="frame" x="68.5" y="337.5" width="202.5" height="42"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adjustFontSize" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="TP0-ac-yex"/>
+                    </connections>
+                </textField>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Signup_Box" translatesAutoresizingMaskIntoConstraints="NO" id="L5v-Vv-GHN">
+                    <rect key="frame" x="68.5" y="399.5" width="238" height="42"/>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Rl-Nr-k8B">
+                    <rect key="frame" x="68.5" y="399.5" width="202.5" height="42"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adjustFontSize" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="iLq-NV-2VX"/>
+                    </connections>
+                </textField>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Password_Icon" translatesAutoresizingMaskIntoConstraints="NO" id="McJ-Qf-Q9d">
+                    <rect key="frame" x="281" y="413.5" width="11" height="14"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Phone_Icon" translatesAutoresizingMaskIntoConstraints="NO" id="xKh-Uf-No2">
+                    <rect key="frame" x="280.5" y="351.5" width="13.5" height="14"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lk3-nP-ATb">
+                    <rect key="frame" x="81.5" y="399.5" width="40.5" height="42"/>
+                    <state key="normal" image="See_Button"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adjustFontSize" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnShowPassClicked:" destination="-1" eventType="touchUpInside" id="id2-qm-yaQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HHK-7w-dVl" firstAttribute="top" secondItem="0Rl-Nr-k8B" secondAttribute="bottom" constant="9" id="15B-k2-mT0"/>
+                <constraint firstItem="McJ-Qf-Q9d" firstAttribute="centerY" secondItem="0Rl-Nr-k8B" secondAttribute="centerY" id="2ZH-al-uyB"/>
+                <constraint firstAttribute="trailing" secondItem="eSl-FG-uc2" secondAttribute="trailing" id="5tk-Av-dbB"/>
+                <constraint firstItem="0Rl-Nr-k8B" firstAttribute="top" secondItem="L5v-Vv-GHN" secondAttribute="top" id="6J0-K9-j3U"/>
+                <constraint firstItem="Qoq-M9-4u1" firstAttribute="top" secondItem="0Rl-Nr-k8B" secondAttribute="bottom" constant="15" id="7X6-EE-8RO"/>
+                <constraint firstItem="K51-da-dxs" firstAttribute="bottom" secondItem="lRm-xh-yXh" secondAttribute="bottom" constant="27" id="8iQ-mg-NtJ"/>
+                <constraint firstItem="YPT-Rd-WkO" firstAttribute="top" secondItem="0Rl-Nr-k8B" secondAttribute="bottom" id="9rW-Lm-GBH"/>
+                <constraint firstItem="Lk3-nP-ATb" firstAttribute="width" secondItem="0Rl-Nr-k8B" secondAttribute="width" multiplier="0.2" id="B8H-62-gxV"/>
+                <constraint firstItem="ZaX-2J-art" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GBy-MM-hI8"/>
+                <constraint firstItem="xOB-E3-Mtq" firstAttribute="leading" secondItem="w6p-1t-2y3" secondAttribute="leading" id="GWq-LF-sWQ"/>
+                <constraint firstItem="GBH-Oh-gQE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HH8-cb-UDR"/>
+                <constraint firstItem="aWN-jX-vvC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="I4s-TO-FWd"/>
+                <constraint firstItem="K51-da-dxs" firstAttribute="top" secondItem="lRm-xh-yXh" secondAttribute="bottom" constant="-43" id="ItD-5H-0iF"/>
+                <constraint firstItem="xKh-Uf-No2" firstAttribute="trailing" secondItem="L5v-Vv-GHN" secondAttribute="trailing" constant="-12.5" id="JOp-ud-g9q"/>
+                <constraint firstItem="Lk3-nP-ATb" firstAttribute="top" secondItem="0Rl-Nr-k8B" secondAttribute="top" id="NhX-MI-GXt"/>
+                <constraint firstItem="Lk3-nP-ATb" firstAttribute="height" secondItem="0Rl-Nr-k8B" secondAttribute="height" id="NkU-0M-CiT"/>
+                <constraint firstItem="Qoq-M9-4u1" firstAttribute="leading" secondItem="HHK-7w-dVl" secondAttribute="trailing" constant="10" id="Q2Z-jm-0jQ"/>
+                <constraint firstItem="aWN-jX-vvC" firstAttribute="top" secondItem="K51-da-dxs" secondAttribute="bottom" id="QRz-jC-Vrs"/>
+                <constraint firstItem="w6p-1t-2y3" firstAttribute="top" secondItem="ZaX-2J-art" secondAttribute="bottom" constant="10" id="RYj-tu-6M8"/>
+                <constraint firstItem="xOB-E3-Mtq" firstAttribute="width" secondItem="w6p-1t-2y3" secondAttribute="width" multiplier="0.85" id="RsW-SY-QGT"/>
+                <constraint firstItem="xKh-Uf-No2" firstAttribute="centerY" secondItem="xOB-E3-Mtq" secondAttribute="centerY" id="UEy-uH-EWV"/>
+                <constraint firstItem="ZaX-2J-art" firstAttribute="top" secondItem="lRm-xh-yXh" secondAttribute="top" constant="120" id="V1X-m4-X7A"/>
+                <constraint firstItem="L5v-Vv-GHN" firstAttribute="top" secondItem="xOB-E3-Mtq" secondAttribute="bottom" constant="20" id="YRU-sS-itc"/>
+                <constraint firstAttribute="bottom" secondItem="eSl-FG-uc2" secondAttribute="bottom" id="ZR1-nO-cGq"/>
+                <constraint firstItem="GBH-Oh-gQE" firstAttribute="top" secondItem="aWN-jX-vvC" secondAttribute="bottom" id="Zjx-jo-Kjo"/>
+                <constraint firstItem="eSl-FG-uc2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="asR-do-Qsy"/>
+                <constraint firstItem="0Rl-Nr-k8B" firstAttribute="leading" secondItem="L5v-Vv-GHN" secondAttribute="leading" id="bB6-Jp-bzg"/>
+                <constraint firstItem="Lk3-nP-ATb" firstAttribute="leading" secondItem="0Rl-Nr-k8B" secondAttribute="leading" constant="13" id="dRU-cV-fxH"/>
+                <constraint firstItem="K51-da-dxs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eSm-C6-QND"/>
+                <constraint firstItem="McJ-Qf-Q9d" firstAttribute="trailing" secondItem="w6p-1t-2y3" secondAttribute="trailing" constant="-14.5" id="edg-ux-keA"/>
+                <constraint firstItem="HHK-7w-dVl" firstAttribute="leading" secondItem="w6p-1t-2y3" secondAttribute="leading" id="elT-dc-U9Y"/>
+                <constraint firstItem="YPT-Rd-WkO" firstAttribute="trailing" secondItem="0Rl-Nr-k8B" secondAttribute="trailing" id="f9Y-KY-Ezy"/>
+                <constraint firstItem="w6p-1t-2y3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fJX-sK-SjD"/>
+                <constraint firstItem="lRm-xh-yXh" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="fxP-Oc-7tG"/>
+                <constraint firstItem="wc7-D7-kEP" firstAttribute="trailing" secondItem="xOB-E3-Mtq" secondAttribute="trailing" id="iob-oy-9vG"/>
+                <constraint firstItem="L5v-Vv-GHN" firstAttribute="trailing" secondItem="w6p-1t-2y3" secondAttribute="trailing" id="iuT-w4-60B"/>
+                <constraint firstItem="xOB-E3-Mtq" firstAttribute="top" secondItem="w6p-1t-2y3" secondAttribute="top" id="kyO-SX-pge"/>
+                <constraint firstItem="HHK-7w-dVl" firstAttribute="leading" secondItem="0Rl-Nr-k8B" secondAttribute="leading" id="lUq-A9-74i"/>
+                <constraint firstItem="0Rl-Nr-k8B" firstAttribute="width" secondItem="L5v-Vv-GHN" secondAttribute="width" multiplier="0.85" id="obD-A6-FL4"/>
+                <constraint firstItem="0Rl-Nr-k8B" firstAttribute="height" secondItem="L5v-Vv-GHN" secondAttribute="height" id="qnc-Ha-IJE"/>
+                <constraint firstItem="wc7-D7-kEP" firstAttribute="top" secondItem="xOB-E3-Mtq" secondAttribute="bottom" id="rFu-Dq-Qlf"/>
+                <constraint firstItem="L5v-Vv-GHN" firstAttribute="leading" secondItem="w6p-1t-2y3" secondAttribute="leading" id="rMu-wl-r1k"/>
+                <constraint firstItem="eSl-FG-uc2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rQv-Cl-Qix"/>
+                <constraint firstItem="ZaX-2J-art" firstAttribute="trailing" secondItem="lRm-xh-yXh" secondAttribute="trailing" id="rz9-yf-2S2"/>
+                <constraint firstItem="ZaX-2J-art" firstAttribute="leading" secondItem="lRm-xh-yXh" secondAttribute="leading" id="uuL-xy-Z97"/>
+                <constraint firstItem="xOB-E3-Mtq" firstAttribute="height" secondItem="w6p-1t-2y3" secondAttribute="height" id="xxX-kf-Xuw"/>
+                <constraint firstItem="lRm-xh-yXh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="184" id="ykP-75-lXf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="130.40000000000001" y="133.5832083958021"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Activation_Code_Popup_BG" width="323.5" height="359"/>
+        <image name="BG_2" width="375" height="667"/>
+        <image name="Password_Icon" width="11" height="14"/>
+        <image name="Phone_Icon" width="13.5" height="14"/>
+        <image name="See_Button" width="14" height="13.5"/>
+        <image name="Signin_OK_Button" width="259.5" height="70"/>
+        <image name="Signin_Signup_Button" width="259.5" height="70.5"/>
+        <image name="Signup_Box" width="238" height="42"/>
+    </resources>
+</document>

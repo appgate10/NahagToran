@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>app_name</key>
+<string>NahagToran</string>
+<key>login_title</key>
+<string>Login</string>
+<key>please_insert_phone_number</key>
+<string>Please Insert Phone Number</string>
+<key>phone</key>
+<string>Phone</string>
+<key>password</key>
+<string>Password</string>
+<key>password_forgot</key>
+<string>Forgot Password?</string>
+<key>press_here</key>
+<string>Press Here</string>
+<key>go</key>
+<string>Go!</string>
+<key>new_user</key>
+<string>New User?</string>
+<key>sign_up</key>
+<string>Register</string>
+<key>i</key>
+<string>Me</string>
+<key>nahag</key>
+<string>D.Driver</string>
+<key>nosea</key>
+<string>Car Owner</string>
+<key>permission_title</key>
+<string>Permission to use location services</string>
+<key>permission_msg</key>
+<string>To provide you driver booking services we need to know your location</string>
+<key>ok</key>
+<string>Confirm</string>
+<key>cancel</key>
+<string>Reject</string>
+<key>validation</key>
+<string>validation</string>
+<key>validation_msg</key>
+<string>Enter the code we sent you to your phone number</string>
+<key>send_again</key>
+<string>Send Again</string>
+<key>send</key>
+<string>Send</string>
+<key>give_msg</key>
+<string>Didn\'t get a sms?</string>
+<key>permission_msg_title</key>
+<string>Permission to receive messages</string>
+<key>permission_msg_msg</key>
+<string>In order to update you with important real-time information, \n we need your permission </string>
+<key>share</key>
+<string>Share app</string>
+<key>settings</key>
+<string>Settings</string>
+<key>my_tokens</key>
+<string>My Tokens</string>
+<key>choise_lang</key>
+<string>choose\nlanguage</string>
+<key>go_out</key>
+<string>Sign Out</string>
+<key>hebrew</key>
+<string>עברית</string>
+<key>english</key>
+<string>English</string>
+<key>face_book_signup</key>
+<string>Register With Facebook</string>
+<key>or</key>
+<string>Or</string>
+<key>manual_signup</key>
+<string>Manual Registration</string>
+<key>required_fields</key>
+<string>Fields With * Are Required</string>
+<key>choise_profil_img</key>
+<string>Select Profile Image</string>
+<key>birth_date</key>
+<string>Birth Date</string>
+<key>id_text</key>
+<string>ID Number</string>
+<key>email_text</key>
+<string>Email</string>
+<key>password_text</key>
+<string>Password</string>
+<key>confirm_password_text</key>
+<string>Repassword</string>
+<key>name_text</key>
+<string>Full Name</string>
+<key>genus_text</key>
+<string>Gender</string>
+<key>male</key>
+<string>Male</string>
+<key>female</key>
+<string>Female</string>
+<key>phone_text</key>
+<string>Phone Number</string>
+<key>title_activity_maps</key>
+<string>Map</string>
+<key>order_driver</key>
+<string>Order Driver</string>
+<key>collecting_point</key>
+<string>Collection address</string>
+<key>first_target</key>
+<string>Final Address</string>
+<key>choise_male_female</key>
+<string>Choose male female driver </string>
+<key>target_number</key>
+<string>Number Address</string>
+<key>search_driver_range</key>
+<string>Find driver in range of:</string>
+<key>price_text</key>
+<string>Expected Price</string>
+<key>order_drive</key>
+<string>Order Driver</string>
+<key>search_driver</key>
+<string>Looking Driver</string>
+<key>took_drive_msg</key>
+<string>It looks like another driver has already taken the order</string>
+<key>ok2</key>
+<string>OK</string>
+<key>fix_drive</key>
+<string>The driving is complete</string>
+<key>rate_text</key>
+<string>Rate It</string>
+<key>skip</key>
+<string>Skip</string>
+<key>token_payment</key>
+<string>Token Payment</string>
+<key>by_your_leave</key>
+<string>Tokens</string>
+<key>tokens</key>
+<string>You Got</string>
+<key>token_msg</key>
+<string>Each order of a driver, cost one token.</string>
+<key>token_msg2</key>
+<string>* The token fee is for use of the service\n and separate from the driver payment</string>
+<key>card_number</key>
+<string>Card Number</string>
+<key>facebook_app_id</key>
+<string>203541934375533</string>
+<key>expiration</key>
+<string>Validity</string>
+<key>cvv_text</key>
+<string>CVV</string>
+<key>number_of_token_text</key>
+<string>How many Tokens would you like to buy?</string>
+<key>cancel_driver</key>
+<string>Cancel Order</string>
+<key>toast_image_intent_null</key>
+<string>Image picker option is missing!</string>
+<key>lbl_set_profile_photo</key>
+<string>Set Image</string>
+<key>lbl_take_camera_picture</key>
+<string>Take a picture</string>
+<key>lbl_choose_from_gallery</key>
+<string>Choose from gallery</string>
+<key>dialog_permission_title</key>
+<string>Grant Permissions</string>
+<key>dialog_permission_message</key>
+<string>This app needs permission to use this feature. You can grant them in app settings.</string>
+<key>go_to_settings</key>
+<string>GOTO SETTINGS</string>
+<key>validation_error_msg</key>
+<string>Select Profile Image</string>
+<key>validation_error_msg2</key>
+<string>Date of birth</string>
+<key>send_code_msg</key>
+<string>The sms sent to your phone</string>
+<key>male_driver</key>
+<string>(male)</string>
+<key>female_driver</key>
+<string>(female)</string>
+<key>buy</key>
+<string>Buy</string>
+<key>destination_navigation</key>
+<string>Navigate</string>
+<key>busy</key>
+<string>Off Duty</string>
+<key>free</key>
+<string>On Duty</string>
+<key>status_driver_work</key>
+<string>On Duty</string>
+<key>status_driver_work2</key>
+<string>Off Duty</string>
+<key>maledriver</key>
+<string>Male Driver</string>
+<key>femaledriver</key>
+<string>Female Driver</string>
+<key>not_metter</key>
+<string>No matter</string>
+<key>NIS</key>
+<string>NIS</string>
+<key>nvitation_accepted_successfully</key>
+<string>The Order Successful</string>
+<key>profile_saved_successfully</key>
+<string>Details saved successfully</string>
+<key>no_driver_near_the_travel</key>
+<string>No driver found near you</string>
+<key>need_to_buy_tokens</key>
+<string>You need need to buy tokens</string>
+<key>edit_profil</key>
+<string>Edit Profile</string>
+<key>location_updated</key>
+<string>Updates Location</string>
+<key>launch_activity</key>
+<string>Open the app</string>
+<key>remove_location_updates</key>
+<string>Stop Updates Location</string>
+<key>km_from_your_location</key>
+<string>Km from your location</string>
+<key>cancel2</key>
+<string>Cancel</string>
+<key>driver_took_msg</key>
+<string>Your order was accepted by</string>
+<key>driver_took_msg2</key>
+<string>The Driver Is On The Way</string>
+<key>travels</key>
+<string>Orders</string>
+<key>time_txt</key>
+<string>Arrival Time:</string>
+<key>SOS_txt</key>
+<string>SOS</string>
+<key>finish_Travel</key>
+<string>End Drive</string>
+<key>cancel_travel_by_user_msg</key>
+<string>The order canceled by the customer</string>
+<key>cancel_travel_msg</key>
+<string>The order canceled</string>
+<key>terms_of_uses_msg</key>
+<string>By clicking the Go button I confirm that\nI have read the Terms of Use and Privacy Policy </string>
+<key>terms_of_uses</key>
+<string>Terms of Use</string>
+<key>privacy_policy</key>
+<string>Privacy Policy</string>
+<key>msg_30_sec</key>
+<string>The driver has arrived!</string>
+<key>reset_password</key>
+<string>Reset Password</string>
+<key>targets</key>
+<string>targets</string>
+<key>no_matching_app_found_</key>
+<string>No matching app found.</string>
+<key>enter_email_for_reset</key>
+<string>To reset your password,\nyou must enter your email address</string>
+<key>email_successfully_sent</key>
+<string>Email successfully sent</string>
+<key>i_reached_destination</key>
+<string>i reached destination</string>
+<key>your_rating_has_been_accepted</key>
+<string>Your rating has been accepted</string>
+<key>rusit</key>
+<string>русский</string>
+<key>home</key>
+<string>home</string>
+</dict>
+</plist>

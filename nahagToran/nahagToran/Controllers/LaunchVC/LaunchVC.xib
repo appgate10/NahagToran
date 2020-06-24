@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LaunchVC">
+            <connections>
+                <outlet property="imgBG" destination="4UK-er-LQf" id="svf-gP-n77"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Start_Page" translatesAutoresizingMaskIntoConstraints="NO" id="4UK-er-LQf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="4UK-er-LQf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="78p-lO-Xgl"/>
+                <constraint firstItem="4UK-er-LQf" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="PxD-4q-Y4b"/>
+                <constraint firstItem="4UK-er-LQf" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="jE0-mS-eFh"/>
+                <constraint firstAttribute="top" secondItem="4UK-er-LQf" secondAttribute="top" id="sGd-7V-FSk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="9Wj-a4-V0G"/>
+            <point key="canvasLocation" x="132" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Start_Page" width="375" height="812"/>
+    </resources>
+</document>

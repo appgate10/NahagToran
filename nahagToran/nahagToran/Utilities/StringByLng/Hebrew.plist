@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>app_name</key>
+<string>NahagToran</string>
+<key>login_title</key>
+<string>התחברות</string>
+<key>please_insert_phone_number</key>
+<string>אנא הזן מספר טלפון</string>
+<key>phone</key>
+<string>טלפון</string>
+<key>password</key>
+<string>סיסמא</string>
+<key>password_forgot</key>
+<string>שכחת סיסמא?</string>
+<key>press_here</key>
+<string>לחץ כאן</string>
+<key>go</key>
+<string>סע!</string>
+<key>new_user</key>
+<string>משתמש חדש?</string>
+<key>sign_up</key>
+<string>הרשמה</string>
+<key>i</key>
+<string>אני</string>
+<key>nahag</key>
+<string>נ.תורן</string>
+<key>nosea</key>
+<string>בעל רכב</string>
+<key>permission_title</key>
+<string>הרשאה לשימוש בשירותי מיקום</string>
+<key>permission_msg</key>
+<string>על מנת לספק לך שירותי הזמנת נהג בזמן\nאמת אנו צריכים לדעת את מיקומך</string>
+<key>ok</key>
+<string>אשר</string>
+<key>cancel</key>
+<string>דחה</string>
+<key>validation</key>
+<string>אימות</string>
+<key>validation_msg</key>
+<string>מסרון עם קוד בן ארבע ספרות נשלח חמספר\nהטלפון שהזנת במערכת, לטובת אימות יש\nלהקיש אותו כעת</string>
+<key>send_again</key>
+<string>שלח שוב</string>
+<key>send</key>
+<string>שלח</string>
+<key>give_msg</key>
+<string>לא קיבלת מסרון?</string>
+<key>permission_msg_title</key>
+<string>הרשאה לקבלת הודעות</string>
+<key>permission_msg_msg</key>
+<string>בכדיי לעדכן אותך במידע חיוני בזמן אמת,\nאנו זקוקים להרשאה </string>
+<key>share</key>
+<string>שתף את היישומון</string>
+<key>settings</key>
+<string>הגדרות</string>
+<key>my_tokens</key>
+<string>הטוקנים שלי</string>
+<key>choise_lang</key>
+<string>בחר שפה</string>
+<key>go_out</key>
+<string>התנתק</string>
+<key>hebrew</key>
+<string>עברית</string>
+<key>english</key>
+<string>English</string>
+<key>face_book_signup</key>
+<string>הרשמה עם Facebook</string>
+<key>or</key>
+<string>או</string>
+<key>manual_signup</key>
+<string>הרשמה ידנית</string>
+<key>required_fields</key>
+<string>השדות המסומנים ב-* הינם חובה</string>
+<key>choise_profil_img</key>
+<string>בחר תמונת פרפיל</string>
+<key>birth_date</key>
+<string>תאריך לידה</string>
+<key>id_text</key>
+<string>מספר תעודת זהות</string>
+<key>email_text</key>
+<string>דואר אלקטרוני</string>
+<key>password_text</key>
+<string>סיסמא</string>
+<key>confirm_password_text</key>
+<string>אישור סיסמא</string>
+<key>name_text</key>
+<string>שם מלא</string>
+<key>genus_text</key>
+<string>מין</string>
+<key>male</key>
+<string>זכר</string>
+<key>female</key>
+<string>נקבה</string>
+<key>phone_text</key>
+<string>טלפון</string>
+<key>title_activity_maps</key>
+<string>Map</string>
+<key>order_driver</key>
+<string>הזמנת נהג</string>
+<key>collecting_point</key>
+<string>נקודת איסוף</string>
+<key>first_target</key>
+<string>יעד סופי</string>
+<key>choise_male_female</key>
+<string>בחרי נהג או נהגת</string>
+<key>target_number</key>
+<string>מספר יעדים</string>
+<key>search_driver_range</key>
+<string>חפש נהג בטווח של:</string>
+<key>price_text</key>
+<string>מחיר צפוי</string>
+<key>order_drive</key>
+<string>הזמן נהג</string>
+<key>search_driver</key>
+<string>מחפש נהג תורן</string>
+<key>took_drive_msg</key>
+<string>ניראה שנהג תורן אחר כבר שריין את \nהנסיעה, בהצלחה בפעם הבאה!</string>
+<key>ok2</key>
+<string>אישור</string>
+<key>fix_drive</key>
+<string>הנסיעה הושלמה</string>
+<key>rate_text</key>
+<string>דרגו את</string>
+<key>skip</key>
+<string>דלג</string>
+<key>token_payment</key>
+<string>תשלום טוקן</string>
+<key>by_your_leave</key>
+<string>ברשותך</string>
+<key>tokens</key>
+<string>טוקנים</string>
+<key>token_msg</key>
+<string>בכדי להזמין נהג תורן עלייך לשלם\nבטוקן עבור הזמנת נהג</string>
+<key>token_msg2</key>
+<string>* תשלום הטוקן הוא עבור השימוש בשירות\nונפרד מהתשלום לנהג התורן</string>
+<key>card_number</key>
+<string>מספר כרטיס</string>
+<key>expiration</key>
+<string>תוקף</string>
+<key>cvv_text</key>
+<string>שלוש הספרות \nבגב הכרטיס</string>
+<key>number_of_token_text</key>
+<string>כמה טוקנים תרצה לרכוש?</string>
+<key>facebook_app_id</key>
+<string>203541934375533</string>
+<key>cancel_driver</key>
+<string>ביטול הנסיעה</string>
+<key>toast_image_intent_null</key>
+<string>Image picker option is missing!</string>
+<key>lbl_set_profile_photo</key>
+<string>Set Image</string>
+<key>lbl_take_camera_picture</key>
+<string>Take a picture</string>
+<key>lbl_choose_from_gallery</key>
+<string>Choose from gallery</string>
+<key>dialog_permission_title</key>
+<string>Grant Permissions</string>
+<key>dialog_permission_message</key>
+<string>This app needs permission to use this feature. You can grant them in app settings.</string>
+<key>go_to_settings</key>
+<string>GOTO SETTINGS</string>
+<key>validation_error_msg</key>
+<string>יש לבחור תמונת פרפיל</string>
+<key>validation_error_msg2</key>
+<string>יש להזין תאריך לידה</string>
+<key>send_code_msg</key>
+<string>המסרון נשלח למספר הטלפון שלך</string>
+<key>male_driver</key>
+<string>(זכר)</string>
+<key>female_driver</key>
+<string>(נקבה)</string>
+<key>buy</key>
+<string>רכישה</string>
+<key>destination_navigation</key>
+<string>ניווט ליעד</string>
+<key>busy</key>
+<string>תפוס</string>
+<key>free</key>
+<string>פנוי</string>
+<key>status_driver_work</key>
+<string>עובד</string>
+<key>status_driver_work2</key>
+<string>לא עובד</string>
+<key>maledriver</key>
+<string>נהג</string>
+<key>femaledriver</key>
+<string>נהגת</string>
+<key>not_metter</key>
+<string>לא משנה</string>
+<key>NIS</key>
+<string>ש"ח</string>
+<key>nvitation_accepted_successfully</key>
+<string>ההזמנה התקבלה בהצלחה!</string>
+<key>profile_saved_successfully</key>
+<string>הפרטים נשמרו בהצלחה</string>
+<key>no_driver_near_the_travel</key>
+<string>לא נמצא נהג בקרבת מקום</string>
+<key>need_to_buy_tokens</key>
+<string>יש צורך לקנות טוקנים</string>
+<key>edit_profil</key>
+<string>עריכת פרופיל</string>
+<key>location_updated</key>
+<string>עדכוני מיקום</string>
+<key>launch_activity</key>
+<string>פתח את האפליקציה</string>
+<key>remove_location_updates</key>
+<string>הפסק עדכוני מיקום</string>
+<key>km_from_your_location</key>
+<string>ק\"מ ממקומך</string>
+<key>cancel2</key>
+<string>ביטול</string>
+<key>driver_took_msg</key>
+<string>הזמנתך אושרה בידי</string>
+<key>driver_took_msg2</key>
+<string>הנהג התורן בדרכו אלייכם</string>
+<key>travels</key>
+<string>נסיעות</string>
+<key>time_txt</key>
+<string>זמן הגעה:</string>
+<key>SOS_txt</key>
+<string>SOS</string>
+<key>finish_Travel</key>
+<string>סיים נסיעה</string>
+<key>cancel_travel_by_user_msg</key>
+<string>הנסיעה בוטלה בידי הלקוח</string>
+<key>cancel_travel_msg</key>
+<string>הנסיעה בוטלה</string>
+<key>terms_of_uses_msg</key>
+<string>בלחיצה על הכפתור סע אני מאשר כי קראתי\nאת תנאי השימוש ואת מדיניות הפרטיות </string>
+<key>terms_of_uses</key>
+<string>תנאי השימוש</string>
+<key>privacy_policy</key>
+<string>מדיניות הפרטיות</string>
+<key>msg_30_sec</key>
+<string>הנהג התורן הגיע!</string>
+<key>targets</key>
+<string>יעדים</string>
+<key>no_matching_app_found_</key>
+<string>No matching app found.</string>
+<key>reset_password</key>
+<string>איפוס סיסמא</string>
+<key>enter_email_for_reset</key>
+<string>על מנת לאפס את סיסמתך,\nעליך להזין כתובת אימייל</string>
+<key>email_successfully_sent</key>
+<string>האימייל נשלח בהצלחה</string>
+<key>i_reached_destination</key>
+<string>הגעתי ליעד</string>
+<key>your_rating_has_been_accepted</key>
+<string>דרוגך התקבל</string>
+<key>rusit</key>
+<string>русский</string>
+<key>home</key>
+<string>בית</string>
+</dict>
+</plist>

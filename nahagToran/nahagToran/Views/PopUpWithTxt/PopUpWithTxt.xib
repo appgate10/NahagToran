@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSansHebrew-Bold.ttf">
+            <string>OpenSansHebrew-Bold</string>
+        </array>
+        <array key="OpenSansHebrew-Regular.ttf">
+            <string>OpenSansHebrew-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PopUpWithTxt">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Driver_Popup_2_BG" translatesAutoresizingMaskIntoConstraints="NO" id="rjp-re-26k">
+                    <rect key="frame" x="13" y="200" width="349" height="267.5"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Order_Popup_1_Box_1" translatesAutoresizingMaskIntoConstraints="NO" id="DPV-H0-5B7">
+                    <rect key="frame" x="60" y="352" width="238" height="42"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="אנא הזן את כתובת מגוריך" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlk-Cg-KyZ">
+                    <rect key="frame" x="25" y="305" width="313" height="23.5"/>
+                    <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N74-uY-Rhs">
+                    <rect key="frame" x="77" y="351" width="192" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="OwQ-LW-QsC"/>
+                        <constraint firstAttribute="width" constant="192" id="SPc-R7-vD6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adjustFontSize" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="oi0-2u-cB9"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQ3-Sd-gvA">
+                    <rect key="frame" x="60" y="351" width="238" height="42"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="zle-Cm-dPB"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adjustFontSize" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnAddressAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="UZf-Dm-coZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Oj-5x-N4x">
+                    <rect key="frame" x="112.5" y="408" width="150.5" height="59"/>
+                    <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="15"/>
+                    <state key="normal" title="אישור" backgroundImage="Driver_Popup_2_Ok_Button"/>
+                    <connections>
+                        <action selector="btnOkAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="uH4-7K-5Xs"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.64036800989999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rjp-re-26k" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="200" id="2FW-1o-F8R"/>
+                <constraint firstItem="DQ3-Sd-gvA" firstAttribute="top" secondItem="nlk-Cg-KyZ" secondAttribute="bottom" constant="22.5" id="7LW-Qm-bmh"/>
+                <constraint firstItem="rjp-re-26k" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="13" id="EcR-My-PAT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nlk-Cg-KyZ" secondAttribute="trailing" constant="37" id="FaQ-QV-VQP"/>
+                <constraint firstItem="N74-uY-Rhs" firstAttribute="top" secondItem="nlk-Cg-KyZ" secondAttribute="bottom" constant="22.5" id="Jrc-Yn-Bqa"/>
+                <constraint firstItem="N74-uY-Rhs" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" constant="-14.5" id="XGK-Lj-omm"/>
+                <constraint firstItem="DQ3-Sd-gvA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="60" id="YIP-zA-Yln"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DQ3-Sd-gvA" secondAttribute="trailing" constant="77" id="dmd-93-52V"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="rjp-re-26k" secondAttribute="bottom" constant="199.5" id="ef1-7B-7P6"/>
+                <constraint firstItem="nlk-Cg-KyZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="305" id="fva-Cn-z0O"/>
+                <constraint firstItem="nlk-Cg-KyZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="gqG-m8-Jpv"/>
+                <constraint firstItem="6Oj-5x-N4x" firstAttribute="top" secondItem="nlk-Cg-KyZ" secondAttribute="bottom" constant="79.5" id="p2M-gl-bel"/>
+                <constraint firstItem="6Oj-5x-N4x" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="wd0-jP-zTS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rjp-re-26k" secondAttribute="trailing" constant="13" id="zOa-Bq-qE5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnOk" destination="6Oj-5x-N4x" id="D7E-2k-adX"/>
+                <outlet property="lblInput" destination="nlk-Cg-KyZ" id="B8o-M5-SIJ"/>
+                <outlet property="txtInput" destination="N74-uY-Rhs" id="hjl-gY-HIe"/>
+            </connections>
+            <point key="canvasLocation" x="301.60000000000002" y="95.802098950524751"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Driver_Popup_2_BG" width="349" height="267.5"/>
+        <image name="Driver_Popup_2_Ok_Button" width="150.5" height="59"/>
+        <image name="Order_Popup_1_Box_1" width="238" height="42"/>
+    </resources>
+</document>

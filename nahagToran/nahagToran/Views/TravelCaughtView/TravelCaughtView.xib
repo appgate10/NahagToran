@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSansHebrew-Bold.ttf">
+            <string>OpenSansHebrew-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TravelCaughtView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Driver_Popup_2_BG" translatesAutoresizingMaskIntoConstraints="NO" id="k8x-pH-OgL">
+                    <rect key="frame" x="13" y="200" width="349" height="267.5"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BrV-eo-rDn">
+                    <rect key="frame" x="112.5" y="408.5" width="150.5" height="59"/>
+                    <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="15"/>
+                    <state key="normal" title="אישור" backgroundImage="Driver_Popup_2_Ok_Button"/>
+                    <connections>
+                        <action selector="btnOkClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="69Z-zp-iuN"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNd-ek-scG">
+                    <rect key="frame" x="13" y="200" width="349" height="93"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dah-1t-nO6">
+                    <rect key="frame" x="13" y="293" width="349" height="101"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="נראה שנהג תורן אחר כבר שריין את הנסיעה, בהצלחה בפעם הבאה!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lhu-P1-f4e">
+                            <rect key="frame" x="40.5" y="17.5" width="268" height="66"/>
+                            <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="15"/>
+                            <color key="textColor" red="0.21568627450980393" green="0.18431372549019609" blue="0.43529411764705883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="adjustFontSize" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Lhu-P1-f4e" firstAttribute="width" secondItem="dah-1t-nO6" secondAttribute="width" multiplier="0.767908" id="bvk-Gp-za7"/>
+                        <constraint firstItem="Lhu-P1-f4e" firstAttribute="height" secondItem="dah-1t-nO6" secondAttribute="height" multiplier="0.652632" id="nMi-jL-B1Y"/>
+                        <constraint firstItem="Lhu-P1-f4e" firstAttribute="centerX" secondItem="dah-1t-nO6" secondAttribute="centerX" id="xJS-12-TrW"/>
+                        <constraint firstItem="Lhu-P1-f4e" firstAttribute="centerY" secondItem="dah-1t-nO6" secondAttribute="centerY" id="ySb-dV-Ukk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="BrV-eo-rDn" firstAttribute="bottom" secondItem="k8x-pH-OgL" secondAttribute="bottom" id="5hL-f6-eij"/>
+                <constraint firstItem="BrV-eo-rDn" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="5xv-qG-45j"/>
+                <constraint firstItem="vNd-ek-scG" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.930667" id="73Y-CV-Y28"/>
+                <constraint firstItem="k8x-pH-OgL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="200" id="9be-d8-S0F"/>
+                <constraint firstItem="k8x-pH-OgL" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Rv9-Bl-AOZ"/>
+                <constraint firstItem="dah-1t-nO6" firstAttribute="height" secondItem="k8x-pH-OgL" secondAttribute="height" multiplier="0.37757" id="TmV-di-BFv"/>
+                <constraint firstItem="vNd-ek-scG" firstAttribute="top" secondItem="k8x-pH-OgL" secondAttribute="top" id="VMQ-HR-6e3"/>
+                <constraint firstItem="dah-1t-nO6" firstAttribute="top" secondItem="vNd-ek-scG" secondAttribute="bottom" id="XDP-8w-5Ez"/>
+                <constraint firstItem="dah-1t-nO6" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.930667" id="dVb-n7-8cK"/>
+                <constraint firstItem="vNd-ek-scG" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="fAW-O8-Sq1"/>
+                <constraint firstItem="dah-1t-nO6" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="rjM-if-fOf"/>
+                <constraint firstItem="vNd-ek-scG" firstAttribute="height" secondItem="k8x-pH-OgL" secondAttribute="height" multiplier="0.347664" id="w60-Il-4NL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnOK" destination="BrV-eo-rDn" id="jPn-Ha-hLV"/>
+                <outlet property="lblMessage" destination="Lhu-P1-f4e" id="5YO-7Y-LN0"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="107.49625187406298"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Driver_Popup_2_BG" width="349" height="267.5"/>
+        <image name="Driver_Popup_2_Ok_Button" width="150.5" height="59"/>
+    </resources>
+</document>
